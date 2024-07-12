@@ -9,7 +9,8 @@ CREATE SCHEMA IF NOT EXISTS stripe;
 CREATE TABLE IF NOT EXISTS jaffle_shop.customers (
     id int PRIMARY KEY,
     first_name varchar(255),
-    last_name varchar(255)
+    last_name varchar(255),
+    updated date NOT NULL DEFAULT '2018-04-01'
 );
 
 CREATE TABLE IF NOT EXISTS jaffle_shop.orders (
